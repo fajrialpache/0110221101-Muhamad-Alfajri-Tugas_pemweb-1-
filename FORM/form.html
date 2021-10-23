@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <div style="border: 1px solid black">
+        <h2>Black goose bistro | Pizza-on-demand</h2>
+        <p>Pizza kayu bakar 12" kami tersedia untuk pengiriman. Buat pizza khusus Anda dan kami akan mengirimkannya dalam waktu satu jam.</p>
+        <br>
+        <fieldset>
+            <legend><b>Informasi Anda</b></legend>
+            <ul>
+                <li><label>Nama :<input type="text"></label></li>
+                <li><label>Alamat :<input type="text"></label></li>
+                <li><label>Nomor Telpon :<input type="text"></label></li>
+                <li><label>Email :<input type="text"></label></li>
+                <li>Instruksi pengiriman :<br>
+                    <textarea name="Instruksi pengiriman" cols="40" rows="3"></textarea></li>
+            </ul>
+        </fieldset>
+        <h2>Rancang pizza impian Anda :</h2>
+        <fieldset>
+            <legend><h4>spesifikasi pizza</h4></legend>
+        <h4>Silahkan pilih spesifikasi pizza yang ada inginkan : <input type="text" list="spesifikasi"></h4>
+        <datalist id="spesifikasi">
+            <option value="Putih klasik"></option>
+            <option value="Multigrain"></option>
+            <option value="Kerak isi keju"></option>
+            <option value="Bebas gula"></option>
+        </datalist>
+        <h4>Topping (pilih sebanyak yang kamu mau)</h4>
+        <ul>
+            <li><input type="checkbox" id="vehicle1" name="Topping" value="saus merah">saus merah</li>
+            <li><input type="checkbox" name="Topping" value="mayones">mayones</li>
+            <li><input type="checkbox" name="Topping" value="saus">saus hitam</li>
+            <li><input type="checkbox" name="Topping" value="keju mozzarella">keju mozzarella</li>
+            <li><input type="checkbox" name="Topping" value="Pepperoni">Pepperoni</li>
+            <li><input type="checkbox" name="Topping" value="Peppers">Peppers</li>
+        </ul>
+        </fieldset>
+        <h4>Berapa banyak pizza yang anda pesan :
+            <select name="pizza" size="1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </h4>
+        <p><input type="submit" value="Bawakan aku pizza!">
+            <input type="reset">
+        </p>
+    </div>
+</body>
+</html>
